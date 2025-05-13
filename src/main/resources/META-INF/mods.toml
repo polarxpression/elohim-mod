@@ -1,0 +1,47 @@
+# This is an example mods.toml file. It contains the data relating to the loading mods.
+# There are several mandatory fields (#mandatory), and many more optional fields (#optional).
+# The overall format is standard TOML format, v0.5.0.
+# Note that lines starting with # are comments.
+# Extension point data is stored in metadata files, separate from this file.
+
+# Mandatory: The modid of our mod
+modLoader="javafml" #mandatory This is typically "javafml" for Forge mods.
+# Mandatory: The version of Forge that this mod is compatible with
+loaderVersion="[47,)" #mandatory This means Forge 47.x.x or later. For 1.20.1, 47 is common.
+# Mandatory: The license for this mod. This is typically a short form identifier like "MIT" or "ARR" (All Rights Reserved).
+license="ARR"
+# Mandatory: A URL to a page for your mod. This will be displayed in the mod list screen.
+# issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/" #optional
+# Mandatory: A list of mods - how many allowed here is determined by the individual mod loader
+[[mods]] #mandatory
+# Mandatory: The modid of the mod
+modId="elohimspeaks" #mandatory
+# Mandatory: The version of the mod
+version="1.0.0" #mandatory
+ # Mandatory: A display name for the mod
+displayName="Elohim Speaks" #mandatory
+# Optional: A URL to the homepage for the mod
+# logoFile="examplemod.png" #optional
+# Optional: A text credit string to display in the mod UI
+credits="Inspired by The Talos Principle. Sounds by Croteam." #optional
+# Optional: A text field displayed in the mod UI
+authors="YourName" #optional
+# Mandatory: The description text for the mod. This will be displayed in the mod list screen.
+description='''
+Elohim's voice will guide, warn, and reflect upon the player's journey through the world.
+'''
+# Mandatory: A dependency - use the modid here
+# This declares a dependency on Forge, specifying a version range.
+[[dependencies.elohimspeaks]] #mandatory
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[47,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+# This declares a dependency on Minecraft, specifying a version range.
+[[dependencies.elohimspeaks]] #mandatory
+    modId="minecraft" #mandatory
+    mandatory=true #mandatory
+    versionRange="[1.20.1]" #mandatory
+    ordering="NONE"
+    side="BOTH"
