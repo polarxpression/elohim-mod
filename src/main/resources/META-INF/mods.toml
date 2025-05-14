@@ -9,7 +9,7 @@ modLoader="javafml" #mandatory This is typically "javafml" for Forge mods.
 # Mandatory: The version of Forge that this mod is compatible with
 loaderVersion="[47,)" #mandatory This means Forge 47.x.x or later. For 1.20.1, 47 is common.
 # Mandatory: The license for this mod. This is typically a short form identifier like "MIT" or "ARR" (All Rights Reserved).
-license="ARR"
+license="MIT"
 # Mandatory: A URL to a page for your mod. This will be displayed in the mod list screen.
 # issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/" #optional
 # Mandatory: A list of mods - how many allowed here is determined by the individual mod loader
@@ -21,11 +21,11 @@ version="1.0.0" #mandatory
  # Mandatory: A display name for the mod
 displayName="Elohim Speaks" #mandatory
 # Optional: A URL to the homepage for the mod
-# logoFile="examplemod.png" #optional
+# logoFile="elohimspeaks.png" #optional
 # Optional: A text credit string to display in the mod UI
 credits="Inspired by The Talos Principle. Sounds by Croteam." #optional
 # Optional: A text field displayed in the mod UI
-authors="YourName" #optional
+authors="Polar" #optional
 # Mandatory: The description text for the mod. This will be displayed in the mod list screen.
 description='''
 Elohim's voice will guide, warn, and reflect upon the player's journey through the world.

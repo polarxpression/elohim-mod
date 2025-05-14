@@ -53,15 +53,15 @@ cd "../${github}"
 touch "src/main/resources/assets/${modid}/lang/en_us.json"
 echo "{ }" >> "src/main/resources/assets/${modid}/lang/en_us.json"
 
-mv src/main/java/com/lothrazar/examplemod "src/main/java/com/lothrazar/${modid}"
-sed -i "s/examplemod/${modid}/g" "src/main/java/com/lothrazar/${modid}/ModMain.java"
-sed -i "s/examplemod/${modid}/g" "src/main/java/com/lothrazar/${modid}/ModRegistry.java"
-sed -i "s/examplemod/${modid}/g" "src/main/java/com/lothrazar/${modid}/ConfigManager.java"
+mv src/main/java/com/lothrazar/elohimspeaks "src/main/java/com/lothrazar/${modid}"
+sed -i "s/elohimspeaks/${modid}/g" "src/main/java/com/lothrazar/${modid}/ModMain.java"
+sed -i "s/elohimspeaks/${modid}/g" "src/main/java/com/lothrazar/${modid}/ModRegistry.java"
+sed -i "s/elohimspeaks/${modid}/g" "src/main/java/com/lothrazar/${modid}/ConfigManager.java"
 
-sed -i "s/examplemod/${modid}/g" build.gradle
-sed -i "s/examplemod/${modid}/g" gradle.properties
-sed -i "s/examplemod/${modid}/g" src/main/resources/pack.mcmeta
-sed -i "s/examplemod/${modid}/g" src/main/resources/META-INF/mods.toml
+sed -i "s/elohimspeaks/${modid}/g" build.gradle
+sed -i "s/elohimspeaks/${modid}/g" gradle.properties
+sed -i "s/elohimspeaks/${modid}/g" src/main/resources/pack.mcmeta
+sed -i "s/elohimspeaks/${modid}/g" src/main/resources/META-INF/mods.toml
 
 sed -i "s/ForgeTemplate/${github}/g" src/main/resources/META-INF/mods.toml
 sed -i "s/ForgeTemplate/${github}/g" .github/README.md
@@ -81,6 +81,6 @@ echo "then run the following three commands to finish setup:"
 
 echo "git add -A"
 echo "git commit -am 'initial commit'"
-echo "git remote add o git@github.com:Lothrazar/${github}.git"
+echo "git remote add o git@github.com:Polar/${github}.git"
 echo "git push o -u trunk/1.20"
 echo "./scripts/setup.sh"
